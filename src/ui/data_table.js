@@ -27,6 +27,8 @@ export default class DataTable {
         return objects.map(o => `<tr>${this.#getRecord(o)}</tr>`).join('');
     }
     #getRecord(object) {
+        object[this.#columnsDefinition[1].key] = object[this.#columnsDefinition[1].key].toFixed(2);
+        object[this.#columnsDefinition[2].key] = object[this.#columnsDefinition[2].key].toFixed(2);
         const record =  this.#columnsDefinition.map(c => `<td>${object[c.key]}</td>`);
         return record.join('');
     }

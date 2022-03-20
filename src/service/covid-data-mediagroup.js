@@ -15,5 +15,4 @@ export default class CovidData {
         const continentData = Object.values(data).map(el => el.All).filter(contry => !!contry.continent);
         return _.groupBy(continentData, 'continent');
     }
-
 }
