@@ -17,7 +17,7 @@ const continentTableDefinition = [
     { key: 'continent', displayName: 'Continent' },
     { key: 'confirmedCases', displayName: 'Confirmed cases(%)' },
     { key: 'confirmedDeath', displayName: 'Death cases(%)' },
-    // { key: 'cost', displayName: "Update time" },
+    // { key: 'updateData', displayName: "Update time" },
     ];
 const continentDataTable = new DataTable(continentTableDefinition, "data-table");
 const navigator = new NavigatorButtons(["0","1","2","3"]);
