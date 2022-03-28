@@ -7,7 +7,6 @@ export default class Spinner {
     }
 
 async awaitWithSpinner(promise) {
-    console.log(promise);
     this.#startSpinner();
     try {
         const response = await promise;
